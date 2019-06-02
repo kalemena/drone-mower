@@ -1,2 +1,3 @@
 # drone-mower
-PLaceholder for mower stories
+
+Placeholder for mower stories
