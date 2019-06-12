@@ -1,0 +1,42 @@
+= drone-mower
+
+Placeholder for mower stories.
+
+After looking at link:https://repalmakershop.com/pages/mower-build-information[Repal Mower] and after 1h mowing and pushing the mower outside, you'd only want to try another concept!
+
+But let's go step by step with stories.
+
+= Stories
+
+== Motors - Mower
+
+What does it take to plug a motor to an arduino?
+
+... TODO
+
+== Motors - Gear
+
+How to drive powerful motors to move the mower?
+
+... TODO
+
+== Sensors
+
+Adding few sensors ...
+
+... TODO
+
+== 3d printing
+
+Custom design, probably a mix of 3d printed parts and base materials when 3d printing is overkill.
+
+... TODO
+
+= References
+
+* link:https://repalmakershop.com/pages/mower-build-information[Repal Mower]
+
+* link:https://www.slideshare.net/RITESHPATIL52/solar-based-grass-cutter-machine[Solar grass cutter]
+* link:https://nevonprojects.com/fully-automated-solar-grass-cutter/[Solar grass cutter]
+
+* link:https://www.open-electronics.org/a-robotic-lawn-mowers-powered-by-solar-energy-with-an-arduino-heart[Open Electronic model]
