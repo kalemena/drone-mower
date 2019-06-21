@@ -8,6 +8,8 @@ But let's go step by step with stories.
 
 = Stories
 
+* link:/stories/01-sensors-sonar-test[Sensors - Sonar Test]
+
 == Motors - Mower
 
 What does it take to plug a motor to an arduino?
@@ -17,12 +19,6 @@ What does it take to plug a motor to an arduino?
 == Motors - Gear
 
 How to drive powerful motors to move the mower?
-
-... TODO
-
-== Sensors
-
-Adding few sensors ...
 
 ... TODO
 

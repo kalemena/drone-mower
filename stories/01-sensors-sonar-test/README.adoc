@@ -1,0 +1,17 @@
+= sonar sensor test
+
+This is easy and straightforward!
+
+The result is interestingly precise enough values when below 3 meters.
+
+.Table Hardware Connections
+|===
+|Arduino |HC-SR04  
+
+|5V    |   VCC
+|7     |   Trig
+|8     |   Echo     
+|GND   |   GND
+|===
+
+link:https://github.com/sparkfun/HC-SR04_UltrasonicSensor[HC-SR04 UltrasonicSensor]
