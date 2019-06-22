@@ -1,0 +1,19 @@
+= Motor - XD-3420
+
+== BOM
+
+image:Motor-Driver-BTS7960-43A.jpg[Motor Driver BTS7960 43A]
+
+== Wiring
+
+image:Motor-Driver-BTS7960-43A-wiring.jpg[Motor Driver BTS7960 43A wiring]
+
+image:motor-xd-3420.jpg[Wired with batteries]
+
+== Code
+
+link:motor-xd-3420-test[Example]
+
+== References
+
+link:https://www.instructables.com/id/Motor-Driver-BTS7960-43A/[Motor Driver BTS7960 43A]

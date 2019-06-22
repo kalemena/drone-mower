@@ -8,13 +8,9 @@ But let's go step by step with stories.
 
 = Stories
 
-* link:/stories/01-sensors-sonar-test[Sensors - Sonar Test]
+* link:/stories/01-sensors-sonar-test[Arduino and Sensors - Sonar Test]
 
-== Motors - Mower
-
-What does it take to plug a motor to an arduino?
-
-... TODO
+* link:/stories/02-motors-XD-3420-test[Arduino and Motors - XD-3420]
 
 == Motors - Gear
 
