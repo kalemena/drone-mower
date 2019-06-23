@@ -10,7 +10,9 @@ But let's go step by step with stories.
 
 * link:/stories/01-sensors-sonar-test[Arduino and Sensors - Sonar Test]
 
-* link:/stories/02-motors-XD-3420-test[Arduino and Motors - XD-3420]
+* link:/stories/02-motors-XD-3420-test[Arduino and Motors - XD-3420 Test]
+
+* link:/stories/03-relay-test[Arduino and Sensors - Relay Test]
 
 == Motors - Gear
 

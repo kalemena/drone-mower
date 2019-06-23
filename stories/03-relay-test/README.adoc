@@ -1,0 +1,22 @@
+= Relay
+
+== BOM
+
+Arduino relay 5v
+
+image:relay.jpg[Relay 5v]
+
+== Wiring
+
+.Table Hardware Connections
+|===
+|Arduino |Relay Board
+
+|5V    |   VCC
+|12    |   IN1
+|GND   |   GND
+|===
+
+== Code
+
+link:relay-test[Example]
