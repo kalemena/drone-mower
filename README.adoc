@@ -14,6 +14,8 @@ But let's go step by step with stories.
 
 * link:/stories/03-relay-test[Arduino and Sensors - Relay Test]
 
+* link:/stories/04-sensors-rain-test[Arduino and Sensors - Rain drop test]
+
 == Motors - Gear
 
 How to drive powerful motors to move the mower?
