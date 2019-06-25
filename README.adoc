@@ -16,6 +16,8 @@ But let's go step by step with stories.
 
 * link:/stories/04-sensors-rain-test[Arduino and Sensors - Rain drop test]
 
+* link:/stories/05-rtc-clock-test[Arduino - RTC Clock]
+
 == Motors - Gear
 
 How to drive powerful motors to move the mower?
