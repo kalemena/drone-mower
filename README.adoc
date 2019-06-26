@@ -18,6 +18,8 @@ But let's go step by step with stories.
 
 * link:/stories/05-rtc-clock-test[Arduino - RTC Clock]
 
+* link:/stories/06-sensors-current-test[Arduino and Sensors - Current]
+
 == Motors - Gear
 
 How to drive powerful motors to move the mower?
