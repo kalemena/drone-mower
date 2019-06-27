@@ -20,6 +20,8 @@ But let's go step by step with stories.
 
 * link:/stories/06-sensors-current-test[Arduino and Sensors - Current]
 
+* link:/stories/07-motors-current-test[Motors and Current measure]
+
 == Motors - Gear
 
 How to drive powerful motors to move the mower?
