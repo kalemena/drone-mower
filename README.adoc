@@ -22,6 +22,8 @@ But let's go step by step with stories.
 
 * link:/stories/07-motors-current-test[Motors and Current measure]
 
+* link:/stories/08-I2C-test[Communication master and slave arduino]
+
 == Motors - Gear
 
 How to drive powerful motors to move the mower?
