@@ -24,6 +24,8 @@ But let's go step by step with stories.
 
 * link:/stories/08-I2C-test[Communication master and slave arduino]
 
+* link:/stories/09-L298N-Test[Motor gear driver]
+
 == Motors - Gear
 
 How to drive powerful motors to move the mower?

@@ -1,0 +1,23 @@
+= Motors driver test
+
+Motor driver is L298N.
+
+This test will hook the motors and alternate rotation Clockwise, CounterClockwise.
+
+== BOM
+
+image:l298n.jpg[Motor Driver L298N]
+
+image:12v-30rpm-motor.jpg[12v motors]
+
+== Wiring
+
+image:L298N-wiring.jpg[Wiring]
+
+== Code
+
+link:/stories/09-L298N-Test/L298N-test/L298N-test.ino[Example]
+
+== References
+
+link:https://howtomechatronics.com/tutorials/arduino/arduino-dc-motor-control-tutorial-l298n-pwm-h-bridge/[Example L298N]
