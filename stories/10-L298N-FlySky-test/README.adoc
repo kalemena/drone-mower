@@ -1,0 +1,24 @@
+= Motors driver + RF Controller 
+
+Motor driver is L298N.
+
+Using FlySky controller and iBus Receiver onto Arduino, the motors are remote controlled.
+
+== BOM
+
+* a FlySky i6 Controller, with iBus receiver such as FS-A8S
+
+image:/stories/09-L298N-Test/l298n.jpg[Motor Driver L298N]
+
+image:/stories/09-L298N-Test/12v-30rpm-motor.jpg[12v motors]
+
+== Wiring
+
+* motors and L298N are wired like in link:/stories/09-L298N-Test[previous story]
+
+* link:https://github.com/kalemena/drone-car#remote-controlling-flysky[FlySky library and wiring]
+
+== Code
+
+link:/stories/10-L298N-FlySky-test/L298N-FlySky-test/L298N-FlySky-test.ino[Example]
+

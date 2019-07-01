@@ -26,6 +26,8 @@ But let's go step by step with stories.
 
 * link:/stories/09-L298N-Test[Motor gear driver]
 
+* link:/stories/10-L298N-FlySky-test[Radio controlled motor gear]
+
 == Motors - Gear
 
 How to drive powerful motors to move the mower?
