@@ -28,11 +28,7 @@ But let's go step by step with stories.
 
 * link:/stories/10-L298N-FlySky-test[Radio controlled motor gear]
 
-== Motors - Gear
-
-How to drive powerful motors to move the mower?
-
-... TODO
+* link:/stories/11-RC-mower-test[Radio controlled motors (gear and cut)]
 
 == 3d printing
 
@@ -43,6 +39,8 @@ Custom design, probably a mix of 3d printed parts and base materials when 3d pri
 = References
 
 * link:https://repalmakershop.com/pages/mower-build-information[Repal Mower]
+
+* link:https://www.ardumower.de/index.php/en/forum/your-projects/1565-valify-my-robot-lawnmower-project[Valify Mower]
 
 * link:https://www.slideshare.net/RITESHPATIL52/solar-based-grass-cutter-machine[Solar grass cutter]
 * link:https://nevonprojects.com/fully-automated-solar-grass-cutter/[Solar grass cutter]
