@@ -4,7 +4,27 @@ Here is sketch with mixing link:/stories/10-L298N-FlySky-test[previous radio sto
 
 Difference is that now we control both motors using FlySky remote.
 
+.Table Arduino usage
+|===
+|Arduino |Usage
+
+|#1 (master)  |   
+Radio Control receiver; 
+
+I2C master; 
+
+Current sensor; 
+
+Relay handler
+|#2 (slave)   |   
+I2C receiver; 
+
+Gear and Cuting motors handler
+|===
+
 == Wiring
+
+image:schema.png[Wiring]
 
 * motors and L298N are wired like in link:/stories/09-L298N-Test[previous story]
 
