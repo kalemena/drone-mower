@@ -1,0 +1,11 @@
+= 3d parts
+
+== References
+
+* link:https://www.thingiverse.com/thing:16627/files[tooth]
+
+* link:https://www.thingiverse.com/thing:21486[wheel]
+
+* link:https://www.thingiverse.com/thing:24071[]
+
+* link:https://www.thingiverse.com/thing:617055[Sonar servo-mount]
