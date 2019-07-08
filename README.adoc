@@ -32,9 +32,9 @@ But let's go step by step with stories.
 
 == 3d printing
 
-Custom design, probably a mix of 3d printed parts and base materials when 3d printing is overkill.
+TODO: in progress...
 
-... TODO
+link:/3d-parts[3d Parts]
 
 = References
 

@@ -1,5 +1,9 @@
 = 3d parts
 
+link:gear-motor-support.scad[Gear Motor support]
+
+image:gear-motor-support.png[Gear Motor support]
+
 == References
 
 * link:https://www.thingiverse.com/thing:16627/files[tooth]
