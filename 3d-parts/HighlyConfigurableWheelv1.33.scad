@@ -63,12 +63,12 @@
 
 wheelWidth     = 15;     // The width (or thickness) of the wheel at the rim.
 tireCSDiameter = 4;     // Cross-sectional diameter (CS) -- How thick is the tire rubber?
-tireID         = 90;    // Internal diameter (ID) -- How wide is the inside opening? 
+tireID         = 80;    // Internal diameter (ID) -- How wide is the inside opening? 
 tireStretch    = 1.01;  // Circumferential stretch percentage (usually 1 + 0-5%, e.g. 1.02) -- How 
                         //   much do you want to stretch it to get it on? 
 
 // Rim properties 
-//      The rim sits at at the outside of the spokes and supports the tires or added treads. 
+//      The rim sits at the outside of the spokes and supports the tires or added treads. 
 //   Installed tires (such as o-rings, rubber bands, etc) are set into grooves carved out of the
 //   rim, while trads are added onto it. Keep this in mind when you're using tires -- as an 
 //   example, the rim height should not be smaller than the radius of o-ring tires. 
@@ -240,14 +240,14 @@ chamferOnly          = false; // Set to true to use chamfers (straight 45-degree
 //      Use servoNutTrap to create nut traps for bolts used to mount the wheel onto servo arms. This 
 //   feature was suggested by AUGuru. 
 
-shaftDiameter        = 6;          // The diameter of the motor shaft
+shaftDiameter        = 6.3;          // The diameter of the motor shaft
 shaftFlatDiameter    = 5.5;          // The diameter of the motor shaft at the flat, or shaftDiameter for no flat.
 
 setScrewCount        = 1;          // The number of set screws/nuts to render, spaced evenly around the shaft 
 setScrewDiameter     = 3.1;          // The diameter of the set screw. 3 is the default for an M3 screw. 
-setScrewTrap         = [5.4, 2.3]; // Size [indiameter, thickness] of set screw nut. The depth is set automatically.
-setScrewNutDiameter  = 5.4;        // The "diameter" of the captive nut, from flat to flat (the "in-diameter")
-setScrewNutThickness = 2.3;        // The thickness of the captive nut
+setScrewNutDiameter  = 5.7;        // The "diameter" of the captive nut, from flat to flat (the "in-diameter")
+setScrewNutThickness = 2.5;        // The thickness of the captive nut
+setScrewTrap         = [setScrewNutDiameter, setScrewNutThickness]; // Size [indiameter, thickness] of set screw nut. The depth is set automatically.
 setScrewNutOffset    = 0;          // The distance to offset the nut from the center of the material. -/+ = in/out
 
 servoHoleDiameter    = 0;          // The diameter of servo arm hounting holes, or zero if no holes
