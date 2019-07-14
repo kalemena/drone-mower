@@ -7,13 +7,49 @@ ir = 4.3;  // threaded rod radius + ample tolerance
 t = 4; 
 e = 0.02; 
 
-// wheel + bearing
-difference() {
-    hull() {
-        rotate_extrude(convexity = 10) translate([15, 0, 0]) circle(r = 15);
-        cylinder(d=10,h=15);
+
+// wheel
+hull() {
+    rotate_extrude(convexity = 10) translate([(63-18)/2, 0, 0]) circle(d = 18);
+    cylinder(d=12, h=18, center=true);
+}
+
+width=5;
+top_width=10;
+dist_axe=37;
+
+module side() {
+    difference() {
+        union() {
+            hull() {
+                translate([0,0,24/2]) cylinder(d=12, h=1);
+                translate([0,0,30/2]) cylinder(d=22, h=width);
+            }
+            hull() {
+                translate([0,0,30/2]) cylinder(d=22, h=width);
+                translate([-5,dist_axe,30/2-5]) cube([30,width,width+5]);
+            }
+            hull() {
+                translate([30/2-5,dist_axe+top_width/2,0]) cube([30,top_width,30], center=true);
+                translate([-5,dist_axe,30/2]) cube([30,width,width]);
+            }            
+        }
+        
+        cylinder(d=6.5, h=40, center=true);
     }
-    translate([0,0,15-bh-e]) cylinder(r=br+e, h=bh+e);
-    translate([0,0,0]) cylinder(h=15-bh, r1=2.5, r2=br);
-    translate([-30,-30,-15]) cube([60,60,15]); 
+}
+
+difference() {
+    union() {
+        side();
+        mirror([0, 0, 1]) side();
+    }
+    
+    translate([30/2-5,dist_axe+bh,0]) {
+        hull() {
+            rotate([90,0,0]) cylinder(r=br+e, h=bh+e+15);
+            translate([0,1,0]) rotate([90,0,0]) cylinder(d=15, h=bh+e);
+        }        
+        rotate([90,0,0]) cylinder(d=8.2, h=40, center=true);
+    }
 }

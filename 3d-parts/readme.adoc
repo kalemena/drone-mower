@@ -4,6 +4,10 @@ link:gear-motor-support.scad[Gear Motor support]
 
 image:gear-motor-support.png[Gear Motor support]
 
+link:wheel-360.scad[wheel 360]
+
+image:wheel-360.png[wheel 360]
+
 == References
 
 * link:https://www.thingiverse.com/thing:16627/files[tooth]
