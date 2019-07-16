@@ -10,6 +10,8 @@ image:wheel-360.png[wheel 360]
 
 == References
 
+Keyword: "ball caster", "swiveling wheel"
+
 * link:https://www.thingiverse.com/thing:16627/files[tooth]
 
 * link:https://www.thingiverse.com/thing:21486[wheel]

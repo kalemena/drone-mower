@@ -47,6 +47,8 @@ link:/3d-parts[3d Parts]
 
 * link:https://www.open-electronics.org/a-robotic-lawn-mowers-powered-by-solar-energy-with-an-arduino-heart[Open Electronic model]
 
+* link:https://www.thingiverse.com/thing:2528123[Vacuum cleaner #1]
+
 * link:https://www.thingiverse.com/thing:3249950[Vacuum cleaner #2]
 
-* link:https://www.thingiverse.com/thing:2528123[Vacuum cleaner #1]
+* link:https://www.instructables.com/id/Build-Your-Own-Vacuum-Robot/[Vacuum cleaner #2]
