@@ -7,16 +7,18 @@ ir = 4.3;  // threaded rod radius + ample tolerance
 t = 4; 
 e = 0.02; 
 
-
+/*
 // wheel
 hull() {
     rotate_extrude(convexity = 10) translate([(63-18)/2, 0, 0]) circle(d = 18);
     cylinder(d=12, h=18, center=true);
 }
+*/
 
 width=5;
 top_width=10;
 dist_axe=37;
+screw_diameter=3.1;
 
 module side() {
     difference() {
@@ -30,7 +32,7 @@ module side() {
                 translate([-5,dist_axe,30/2-5]) cube([30,width,width+5]);
             }
             hull() {
-                translate([30/2-5,dist_axe+top_width/2,0]) cube([30,top_width,30], center=true);
+                translate([30/2-5,dist_axe+top_width/2,0]) cube([35,top_width,30], center=true);
                 translate([-5,dist_axe,30/2]) cube([30,width,width]);
             }            
         }
@@ -45,11 +47,20 @@ difference() {
         mirror([0, 0, 1]) side();
     }
     
-    translate([30/2-5,dist_axe+bh,0]) {
+    translate([30/2-5,dist_axe+top_width,0]) {
         hull() {
-            rotate([90,0,0]) cylinder(r=br+e, h=bh+e+15);
-            translate([0,1,0]) rotate([90,0,0]) cylinder(d=15, h=bh+e);
+            rotate([90,0,0]) cylinder(r=br+e, h=bh+e);
+            translate([0,-2,0]) rotate([90,0,0]) cylinder(d=20, h=bh+e);
         }        
-        rotate([90,0,0]) cylinder(d=8.2, h=40, center=true);
+        rotate([90,0,0]) cylinder(d=20, h=40, center=true);
+        
+        rotate([90,0,0])
+            for(rot=[1:2]) {
+                rotate([0,0,30 + 360 - rot * 360/2]) 
+                    translate([br+3,0,-5]) 
+                        cylinder(h=20, d=screw_diameter);
+            }
     }
+    
+    
 }
