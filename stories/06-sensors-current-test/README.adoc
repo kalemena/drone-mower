@@ -25,3 +25,10 @@ link:ACS712-test[Example]
 
 == References
 
+link:https://electronics.stackexchange.com/questions/422086/esp32-using-acs712-give-wrong-values[ESP notes]
+
+IMPORTANT: The ACS712 requires 5V as Vcc and outputs 0.5 x Vcc at 0 A (no current), i.e. 2.5V. 
+
+For 5v Arduino, that's 2.5V / 5V x 
+
+For the ESP32, that's 2.5V / 3.3V x 4096 units.
