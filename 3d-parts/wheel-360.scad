@@ -6,7 +6,6 @@ bh = 7;     // bearing height
 ir = 4.3;  // threaded rod radius + ample tolerance
 t = 4; 
 e = 0.02; 
-
 /*
 // wheel
 hull() {
@@ -14,7 +13,6 @@ hull() {
     cylinder(d=12, h=18, center=true);
 }
 */
-
 width=5;
 top_width=10;
 dist_axe=37;
@@ -56,11 +54,9 @@ difference() {
         
         rotate([90,0,0])
             for(rot=[1:2]) {
-                rotate([0,0,30 + 360 - rot * 360/2]) 
+                rotate([0,0,20 + 360 - rot * 360/2]) 
                     translate([br+3,0,-5]) 
                         cylinder(h=20, d=screw_diameter);
             }
     }
-    
-    
 }
