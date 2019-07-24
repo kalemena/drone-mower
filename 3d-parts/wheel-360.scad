@@ -16,7 +16,7 @@ hull() {
 width=5;
 top_width=10;
 dist_axe=37;
-screw_diameter=3.1;
+screw_diameter=3.2;
 
 module side() {
     difference() {
