@@ -8,25 +8,7 @@ But let's go step by step with stories.
 
 = Stories
 
-* link:/stories/01-sensors-sonar-test[Arduino and Sensors - Sonar Test]
-
-* link:/stories/02-motors-XD-3420-test[Arduino and Motors - XD-3420 Test]
-
-* link:/stories/03-relay-test[Arduino and Sensors - Relay Test]
-
-* link:/stories/04-sensors-rain-test[Arduino and Sensors - Rain drop test]
-
-* link:/stories/05-rtc-clock-test[Arduino - RTC Clock]
-
-* link:/stories/06-sensors-current-test[Arduino and Sensors - Current]
-
-* link:/stories/07-motors-current-test[Motors and Current measure]
-
-* link:/stories/08-I2C-test[Communication master and slave arduino]
-
-* link:/stories/09-L298N-Test[Motor gear driver]
-
-* link:/stories/10-L298N-FlySky-test[Radio controlled motor gear]
+* link:stories-sensors.adoc[Sensors Test]
 
 * link:/stories/11-RC-mower-test[Radio controlled motors (gear and cut)]
 
