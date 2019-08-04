@@ -8,7 +8,7 @@ But let's go step by step with stories.
 
 = Stories
 
-* link:stories-sensors.adoc[Sensors Test]
+* link:stories-sensors.adoc[Sensors Testing]
 
 * link:/stories/11-RC-mower-test[Radio controlled motors (gear and cut)]
 
