@@ -1,6 +1,6 @@
 $fn=100;
 
-module xd3420() {
+module motorXD3420() {
     union() {
         cylinder(d=26, h=84);
         translate([0,0,6.5]) cylinder(d=51, h=71);
@@ -15,4 +15,4 @@ module xd3420() {
     }
 }
 
-xd3420();
+motorXD3420();
