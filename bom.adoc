@@ -1,0 +1,21 @@
+
+## BOM
+
+Here are items to buy (or build):
+
+.Materials
+[width="80%",options="header"]
+|=========================================================
+|Item | Links | Comments
+
+| Wheel 
+| 
+* link:https://www.leroymerlin.fr/v3/p/produits/roue-fixe-sur-axe-diam-175-mm-e21495[Wheel 175mm]
+
+* link:https://www.leroymerlin.fr/v3/p/produits/roue-fixe-sur-axe-diam-180-mm-e21499[Wheel 180mm]
+| 
+To print or not to print ? 
+For 4€, this seems better to buy.
+
+|=========================================================
+
