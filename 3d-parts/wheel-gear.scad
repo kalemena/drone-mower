@@ -17,10 +17,10 @@ module wheelGear() {
             }
     }
 
-    // radius
-    wheelRadius=6;
-    for(rot=[1:wheelRadius]) {
-        rotate([0,0,360 - rot * 360/wheelRadius]) 
+    // spokes
+    spokes=6;
+    for(rot=[1:spokes]) {
+        rotate([0,0,360 - rot * 360/spokes]) 
             hull() {
                 translate([10,10,9]) rotate([0,0,45]) cube([1,12,18], center=true);
                 translate([60,60,13/2]) rotate([0,0,45]) cube([1,10,13], center=true);

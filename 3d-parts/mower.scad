@@ -1,6 +1,7 @@
 $fn=100;
 
 use<wheel-360.scad>
+use<wheel-gear.scad>
 use<motor-xd-3420.scad>
 use<motor-gear-30rpm.scad>
 
@@ -32,3 +33,7 @@ translate([0,0,100]) rotate([180,0,90]) motorXD3420();
 translate([-150,-85,5+37/2]) rotate([90,0,0]) motorGear30RPM();
 // motor gear left
 translate([-150,85,5+37/2]) rotate([90,0,180]) motorGear30RPM();
+// wheel right
+translate([-150,-190,5+37/2]) rotate([90,0,180]) wheelGear();
+// wheel left
+translate([-150,190,5+37/2]) rotate([90,0,0]) wheelGear();
