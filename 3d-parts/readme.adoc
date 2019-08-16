@@ -1,12 +1,16 @@
 = 3d parts
 
-link:gear-motor-support.scad[Gear Motor support]
+image:motor-cut-adapter.png[Motor cut adapter, link="motor-cut-adapter.scad"]
 
-image:gear-motor-support.png[Gear Motor support]
+image:motor-gear-30rpm.png[motor gear 30RPM, link="motor-gear-30rpm.scad"]
 
-link:wheel-360.scad[wheel 360]
+image:motor-gear-support.png[Motor gear support, link="motor-gear-support.scad"]
 
-image:wheel-360.png[wheel 360]
+image:motor-xd-3420.png[motor xd-3420, link="motor-xd-3420.scad"]
+
+image:wheel-360.png[wheel 360, link="wheel-360.scad"]
+
+image:wheel-gear.png[wheel gear, link="wheel-gear.scad"]
 
 == References
 
