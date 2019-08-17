@@ -1,0 +1,44 @@
+= 3D modeling
+
+== Full 3D view
+
+image:3d-parts/mower.png[Mower, link="3d-parts/mower.scad"]
+
+== 3D parts
+
+.Parts
+[width="80%",options="header"]
+|=========================================================
+| Item | Image
+
+| Motor cut adapter
+| image:3d-parts/motor-cut-adapter.png[Motor cut adapter, link="3d-parts/motor-cut-adapter.scad"]
+
+| Motor Gear 30RPM
+| image:3d-parts/motor-gear-30rpm.png[motor gear 30RPM, link="3d-parts/motor-gear-30rpm.scad"]
+
+| Motor Gear support
+| image:3d-parts/motor-gear-support.png[Motor gear support, link="3d-parts/motor-gear-support.scad"]
+
+| Motor XD-3420
+| image:3d-parts/motor-xd-3420.png[motor xd-3420, link="3d-parts/motor-xd-3420.scad"]
+
+| Wheel swiveling
+| image:3d-parts/wheel-360.png[wheel 360, link="3d-parts/wheel-360.scad"]
+
+| Wheel gear
+| image:3d-parts/wheel-gear.png[wheel gear, link="3d-parts/wheel-gear.scad"]
+
+|=========================================================
+
+== References
+
+Keyword: "ball caster", "swiveling wheel"
+
+* link:https://www.thingiverse.com/thing:16627/files[tooth]
+
+* link:https://www.thingiverse.com/thing:21486[wheel]
+
+* link:https://www.thingiverse.com/thing:24071[]
+
+* link:https://www.thingiverse.com/thing:617055[Sonar servo-mount]
