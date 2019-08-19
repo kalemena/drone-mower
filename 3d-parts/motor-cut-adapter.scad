@@ -18,4 +18,14 @@ module motorCutGrassAdapter() {
     }    
 }
 
+//
+module motorCutDiscWireHolder() {
+    translate([0,0,8]) 
+        difference() {
+            cylinder(d=61,h=3);
+            cylinder(d1=16.5,d2=19,h=3);
+        }
+}
+
 motorCutGrassAdapter();
+motorCutDiscWireHolder();
