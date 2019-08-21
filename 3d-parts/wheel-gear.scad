@@ -1,45 +1,54 @@
 $fn=100;
 
+wheelW=34;
+
+module wheelBumps() {
+    bumps=60;
+    for(rot=[1:bumps]) {
+        rotate([0,0,360 - rot * 360/bumps]) 
+            translate([165/2,0,-wheelW/2]) 
+                cube([4,4,wheelW/2]);
+    }
+}
+
+module wheelSpokes() {
+    spokes=5;
+    intersection() {
+        for(rot=[1:spokes]) {
+            rotate([0,0,360 - rot * 360/spokes]) 
+                hull() {
+                    translate([10,10,9]) rotate([0,0,45]) cube([1,10,18], center=true);
+                    translate([50,50,13/2]) rotate([0,0,45]) cube([1,46,13], center=true);
+                }
+        }
+        scale([1,1,0.185]) sphere(d=180);
+    }
+}
+
 module wheelGear() {
     // external
     difference() {
-        cylinder(d=173,h=15);
-        cylinder(d=173-20,h=15);
+        cylinder(d=165,h=wheelW, center=true);
+        cylinder(d=135,h=wheelW+0.1, center=true);
     }
 
     // internal
-    union() {
-        cylinder(d=40,h=18);
-        translate([0,0,18]) 
-            difference() {
-                cylinder(d=30,h=15);
-                cylinder(d=10,h=25);
-            }
+    difference() {
+        cylinder(d=30,h=wheelW, center=true);
+        cylinder(d=10,h=wheelW+0.1, center=true);
     }
-
-    // spokes
-    spokes=6;
-    for(rot=[1:spokes]) {
-        rotate([0,0,360 - rot * 360/spokes]) 
-            hull() {
-                translate([10,10,9]) rotate([0,0,45]) cube([1,12,18], center=true);
-                translate([60,60,13/2]) rotate([0,0,45]) cube([1,10,13], center=true);
-            }
-    }
-
+    
     // wheel bumps
-    bumps=80;
-    for(rot=[1:bumps]) {
-        rotate([0,0,360 - rot * 360/bumps]) 
-            translate([173/2,0,0]) 
-                cube([2,3.5,15/2]);
-    }
-
-    translate([0,0,15/2])
-    for(rot=[1:bumps]) {
-        rotate([0,0,2+360 - rot * 360/bumps]) 
-            translate([173/2,0,0]) 
-                cube([2,3.5,15/2]);
+    wheelBumps();
+    translate([0,0,wheelW/2])
+        rotate([0,0,3.1]) 
+            wheelBumps();
+    
+    spokes=5;
+    // spokes left
+    union() {
+        wheelSpokes();
+        rotate([0,180,18]) wheelSpokes();
     }
 }
 
