@@ -34,3 +34,5 @@ link:/3d-parts[3d Parts]
 * link:https://www.thingiverse.com/thing:3249950[Vacuum cleaner #2]
 
 * link:https://www.instructables.com/id/Build-Your-Own-Vacuum-Robot/[Vacuum cleaner #2]
+
+* link:https://www.veterobot.org/2015/06/building-robotics-ground-vehicle-part-1.html[Robotic vehicle]

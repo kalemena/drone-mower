@@ -24,6 +24,8 @@ module motorCutSupport() {
 }
 
 motorCutSupport();
+
+/*
 translate([0,0,80]) rotate([180,0,0]) motorXD3420();
 
 translate([0,0,-9])
@@ -43,3 +45,4 @@ difference() {
                 cylinder(d=6, h=12, center=true);
     }
 }
+*/

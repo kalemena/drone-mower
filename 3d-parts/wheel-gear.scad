@@ -26,29 +26,33 @@ module wheelSpokes() {
 }
 
 module wheelGear() {
-    // external
-    difference() {
-        cylinder(d=165,h=wheelW, center=true);
-        cylinder(d=135,h=wheelW+0.1, center=true);
-    }
-
-    // internal
-    difference() {
-        cylinder(d=30,h=wheelW, center=true);
-        cylinder(d=10,h=wheelW+0.1, center=true);
+    color([0.1,0.1,0.1]) {
+        // external
+        difference() {
+            cylinder(d=165,h=wheelW, center=true);
+            cylinder(d=135,h=wheelW+0.1, center=true);
+        }
+        
+        // wheel bumps
+        wheelBumps();
+        translate([0,0,wheelW/2])
+            rotate([0,0,3.1]) 
+                wheelBumps();
     }
     
-    // wheel bumps
-    wheelBumps();
-    translate([0,0,wheelW/2])
-        rotate([0,0,3.1]) 
-            wheelBumps();
-    
-    spokes=5;
-    // spokes left
-    union() {
-        wheelSpokes();
-        rotate([0,180,18]) wheelSpokes();
+    color([1,1,1]) {
+        // internal
+        difference() {
+            cylinder(d=30,h=wheelW, center=true);
+            cylinder(d=10,h=wheelW+0.1, center=true);
+        }
+        
+        spokes=5;
+        // spokes left
+        union() {
+            wheelSpokes();
+            rotate([0,180,18]) wheelSpokes();
+        }
     }
 }
 
