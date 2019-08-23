@@ -16,12 +16,14 @@ module wheel360() {
     screw_diameter=3.2;
 
     // wheel
+    color([0.1,0.1,0.1])
     hull() {
         rotate_extrude(convexity = 10) translate([(63-18)/2, 0, 0]) circle(d = 18);
         cylinder(d=12, h=18, center=true);
     }
 
     module side() {
+        color([0.9,0.9,0.9])
         difference() {
             union() {
                 hull() {
@@ -38,7 +40,7 @@ module wheel360() {
                 }            
             }
             
-            cylinder(d=6.5, h=40, center=true);
+            cylinder(d=6.5, h=41, center=true);
         }
     }
 
@@ -53,7 +55,7 @@ module wheel360() {
                 rotate([90,0,0]) cylinder(r=br+e, h=bh+e);
                 translate([0,-2,0]) rotate([90,0,0]) cylinder(d=20, h=bh+e);
             }        
-            rotate([90,0,0]) cylinder(d=20, h=40, center=true);
+            rotate([90,0,0]) cylinder(d=20, h=41, center=true);
             
             rotate([90,0,0])
                 for(rot=[1:2]) {
