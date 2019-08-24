@@ -5,6 +5,7 @@ use<wheel-gear.scad>
 use<motor-xd-3420.scad>
 use<motor-cut-support.scad>
 use<motor-cut-adapter.scad>
+use<motor-cut-disc.scad>
 use<motor-gear-30rpm.scad>
 
 mower_width=300;
@@ -35,14 +36,8 @@ translate([mower_length/2+40,-mower_width/2+50,32]) rotate([90,0,0]) wheel360();
 // motor grass cut
 translate([0,0,52+90]) rotate([180,0,90]) motorXD3420();
 color([1,0,0.2],0.8) rotate([0,0,90]) translate([0,0,10+52]) motorCutSupport();
-
 // motor cut disc
-translate([0,0,55-32])
-difference() {
-    cylinder(d=110,h=10);
-    cylinder(d=15,h=10);
-}
-
+translate([0,0,20]) motorCutDisc();
 translate([0,0,53]) rotate([180,0,0]) motorCutGrassAdapter();
 
 // motor gear right

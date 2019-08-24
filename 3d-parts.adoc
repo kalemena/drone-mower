@@ -14,11 +14,20 @@ image:3d-parts/mower.png[Mower, link="3d-parts/mower.scad"]
 | Motor cut adapter
 | image:3d-parts/motor-cut-adapter.png[Motor cut adapter, link="3d-parts/motor-cut-adapter.scad"]
 
+| Motor cut support
+| image:3d-parts/motor-cut-support.png[Motor cut support, link="3d-parts/motor-cut-support.scad"]
+
+| Motor cut disc
+| image:3d-parts/motor-cut-disc.png[Motor cut disc, link="3d-parts/motor-cut-disc.scad"]
+
 | Motor Gear 30RPM
 | image:3d-parts/motor-gear-30rpm.png[motor gear 30RPM, link="3d-parts/motor-gear-30rpm.scad"]
 
 | Motor Gear support
 | image:3d-parts/motor-gear-support.png[Motor gear support, link="3d-parts/motor-gear-support.scad"]
+
+| Motor Gear adapter
+| image:3d-parts/motor-gear-adapter.png[Motor gear adapter, link="3d-parts/motor-gear-adapter.scad"]
 
 | Motor XD-3420
 | image:3d-parts/motor-xd-3420.png[motor xd-3420, link="3d-parts/motor-xd-3420.scad"]
