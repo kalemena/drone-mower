@@ -11,7 +11,7 @@ module motorCutGrassAdapter() {
         }
         
         // motor rotor M8
-        cylinder(d=8.5,h=shaft_length);
+        cylinder(d=8.5,h=shaft_length+0.01);
         
         // M3 fix screw
         translate([0,0,5]) rotate([90,0,0]) cylinder(d=3.1,h=40, center=true);

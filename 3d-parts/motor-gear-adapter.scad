@@ -47,7 +47,7 @@ module screwBoltsShaft() {
         // M3 fix screw
         translate([20,0,6+35-5]) rotate([0,90,0]) cylinder(d=3.1,h=40, center=true);
         translate([20,0,6+35-20]) rotate([0,90,0]) cylinder(d=3.1,h=40, center=true);
-        translate([5,-5.5/2,6+10+0.01]) cube([2.5,5.5,25]);        
+        translate([4,-6.5/2,6+10+0.01]) cube([3.5,6.5,25]);        
     }
 }
 
