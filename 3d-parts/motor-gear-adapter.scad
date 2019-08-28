@@ -77,7 +77,7 @@ module screwBoltsShaft() {
 
 module bearingAxle() {
     bearingH=7;
-    screwDiamInt=7.6;
+    screwDiamInt=7.2;
     difference() {
         union() {
             cylinder(d1=15,d2=12,h=2);
@@ -90,5 +90,5 @@ module bearingAxle() {
 //screwBoltsExt();
 //screwBoltsInt();
 //screwBoltsShaft();
-//bearingAxle();
+bearingAxle();
 
