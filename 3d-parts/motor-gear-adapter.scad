@@ -1,6 +1,6 @@
 $fn=100;
 
-/** Wheel External side bolts
+/** Wheel External side axle
  */
 module screwBoltsExt() {
     // screw diameter
@@ -19,7 +19,7 @@ module screwBoltsExt() {
 }
 
 
-/** Wheel Internal side boltss
+/** Wheel Internal side axle
  */
 module screwBoltsInt() {
     // screw diameter
@@ -29,27 +29,26 @@ module screwBoltsInt() {
     
     difference() {
         union() {
-            difference() {
-                union() {
-                    cylinder(d=15,h=8);
-                    translate([0,0,8]) cylinder(d1=15, d2=26,h=6);
-                    translate([0,0,8+6]) cylinder(d=26,h=3+3);                   
-                }
-                translate([0,0,8+6+3]) cylinder(d=20,h=3+0.01);
-                for(rot=[1:6]) {
-                    rotate([0,0,360 - rot * 360/6])
-                        translate([12.5,0,6+12.5]) 
-                            cube([6,2.3,3+0.01], center=true);
-                }
-                // M3 fix screw
-                translate([0,0,4.5]) rotate([0,90,0]) cylinder(d=2.3,h=40, center=true);
-            }
-            translate([0,0,8+6]) cylinder(d=10+0.1,h=2+7); 
+            cylinder(d=15,h=8);
+            translate([0,0,8]) cylinder(d1=15, d2=26,h=6);
+            translate([0,0,8+6]) cylinder(d=26,h=3+3);                   
         }
+        translate([0,0,8+6+3]) cylinder(d=20,h=3+0.01);
+        for(rot=[1:6]) {
+            rotate([0,0,360 - rot * 360/6])
+                translate([12.5,0,6+12.5]) 
+                    cube([6,2.3,3+0.01], center=true);
+        }
+        // M3 fix screw
+        translate([0,0,4.5]) rotate([0,90,0]) cylinder(d=2.3,h=40, center=true);
+        
+        // Axle
         translate([0,0,-0.01]) cylinder(d=screwDiamInt,h=25+0.02);
     }
 }
 
+/** Wheel Axle to motor coupling
+ */
 module screwBoltsShaft() {
     // screw diameter
     // 6.4 for 6mm, 8.5 for 8mm, 7.6 for 7mm
@@ -67,17 +66,19 @@ module screwBoltsShaft() {
         translate([0,0,14+2]) cylinder(d=screwDiamInt,h=14+0.02);
         
         // M3 fix screws
-        translate([4.5,-6/2,-0.01]) cube([3.2,6,9+0.02]); 
+        translate([4.5,-5.6/2,-0.01]) cube([3.2,5.6,9+0.02]); 
         translate([20,0,5]) rotate([0,90,0]) cylinder(d=3.1,h=40, center=true);
         
-        translate([4.5,-6/2,30-9]) cube([3.2,6,9+0.02]); 
+        translate([4.5,-5.6/2,30-9]) cube([3.2,5.6,9+0.02]); 
         translate([20,0,30-5]) rotate([0,90,0]) cylinder(d=3.1,h=40, center=true);
     }
 }
 
+/** Small axle to bearing adapter
+ */
 module bearingAxle() {
     bearingH=7;
-    screwDiamInt=7.2;
+    screwDiamInt=7.4;
     difference() {
         union() {
             cylinder(d1=15,d2=12,h=2);
@@ -87,8 +88,33 @@ module bearingAxle() {
     }
 }
 
-//screwBoltsExt();
+/** Bearing to plate support
+ */
+module bearingHolder() {        
+    // bearing 608zz
+    br = 11.15; // bearing radius with tolerance for insertion
+    bh = 7;     // bearing height
+    ir = 4.3;    // threaded rod radius + ample tolerance
+    t = 4; 
+    e = 0.02; 
+    
+    difference() {
+        union() {
+            cylinder(r=br+e+4, h=bh+e+1);
+            hull() {
+                h=bh+e+1;
+                translate([0,15,h/2]) cube([45,5,h], center=true);
+                translate([0,5,h/2]) cube([20,5,h+2], center=true);
+            }
+        }
+        translate([0,0,-2.005]) cylinder(r=br+e, h=bh+e+2.02);
+        translate([0,0,bh]) cylinder(r1=br+e, r2=br+e-2, h=3+0.01);
+    }
+}
+
+screwBoltsExt();
 //screwBoltsInt();
 //screwBoltsShaft();
-bearingAxle();
+//bearingAxle();
+//bearingHolder();
 
