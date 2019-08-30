@@ -1,8 +1,7 @@
 $fn=100;
 
-wheelW=34;
-
 module wheelBumps() {
+    wheelW=34;
     bumps=60;
     for(rot=[1:bumps]) {
         rotate([0,0,360 - rot * 360/bumps]) 
@@ -26,6 +25,7 @@ module wheelSpokes() {
 }
 
 module wheelGear() {
+    wheelW=34;
     color([0.1,0.1,0.1]) {
         // external
         difference() {

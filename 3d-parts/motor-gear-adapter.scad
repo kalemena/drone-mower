@@ -1,5 +1,9 @@
 $fn=100;
 
+use<wheel-gear.scad>
+use<motor-gear-30rpm.scad>
+use<motor-gear-support.scad>
+
 /** Wheel External side axle
  */
 module screwBoltsExt() {
@@ -8,6 +12,7 @@ module screwBoltsExt() {
     screwDiamExt=8.5;
     screwDiamInt=7.6;
     
+    color([0.9,0.2,0.2])
     difference() {
         union() {
             cylinder(d=14,h=2);
@@ -27,6 +32,7 @@ module screwBoltsInt() {
     screwDiamExt=8.5;
     screwDiamInt=7.6;
     
+    color([0.9,0.2,0.2])
     difference() {
         union() {
             cylinder(d=15,h=8);
@@ -57,6 +63,7 @@ module screwBoltsShaft() {
 
     motorAxleDiam=6.4;
     
+    color([0.9,0.2,0.2])
     difference() {
         cylinder(d=21,h=30);
         
@@ -97,24 +104,33 @@ module bearingHolder() {
     ir = 4.3;    // threaded rod radius + ample tolerance
     t = 4; 
     e = 0.02; 
+    h=bh+e+1;
     
+    color([0.9,0.2,0.2])
     difference() {
         union() {
             cylinder(r=br+e+4, h=bh+e+1);
-            hull() {
-                h=bh+e+1;
+            hull() {                
                 translate([0,15,h/2]) cube([45,5,h], center=true);
-                translate([0,5,h/2]) cube([20,5,h+2], center=true);
+                translate([0,5,h/2]) cube([20,5,h], center=true);
             }
+            translate([0,25.75,5]) cube([20,16.5,20], center=true);
+            translate([0,31.5,55]) cube([20,5,100], center=true);
         }
-        translate([0,0,-2.005]) cylinder(r=br+e, h=bh+e+2.02);
+        translate([0,0,-4.005]) cylinder(r=br+e, h=bh+e+4.02);
         translate([0,0,bh]) cylinder(r1=br+e, r2=br+e-2, h=3+0.01);
+        translate([18,7,h/2]) rotate([90,0,0]) cylinder(d=3.1+2,h=10, center=true);
+        translate([-18,7,h/2]) rotate([90,0,0]) cylinder(d=3.1+2,h=10, center=true);
+        translate([18,15,h/2]) rotate([90,0,0]) cylinder(d=3.1,h=10, center=true);
+        translate([-18,15,h/2]) rotate([90,0,0]) cylinder(d=3.1,h=10, center=true);
     }
 }
 
-screwBoltsExt();
-//screwBoltsInt();
-//screwBoltsShaft();
+translate([-19,0,0]) rotate([0,90,0]) screwBoltsExt();
+rotate([0,90,0]) wheelGear();
+translate([34,0,0]) rotate([0,-90,0]) screwBoltsInt(); 
+translate([64,0,0]) rotate([0,90,0]) screwBoltsShaft();
+rotate([90,0,0]) translate([165,-7,0]) rotate([0,-90,0]) motorGear30RPM();
+translate([96,0,-7]) motorGearSupport();
 //bearingAxle();
-//bearingHolder();
-
+translate([40,0,0]) rotate([90,180,90]) bearingHolder();
