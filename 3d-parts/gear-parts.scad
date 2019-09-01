@@ -1,7 +1,7 @@
 $fn=100;
 
-use<wheel-gear.scad>
-use<motor-gear-30rpm.scad>
+use<gear-wheel.scad>
+use<gear-motor-30rpm.scad>
 
 /** Wheel External side axle
  */
@@ -146,7 +146,7 @@ module bearingHolderBottom() {
                 translate([-45/2,-30,-5/2]) cube([45,30,h+5]);
                 hull() {
                     translate([-45/2,-30,-5/2]) cube([45,10,h+5]);
-                    translate([-(45+18)/2,-30,-5/2]) cube([45+18,5,h+5]);
+                    translate([-(45+20)/2,-30,-5/2]) cube([45+20,5,h+5]);
                 }
             }
             
@@ -162,14 +162,14 @@ module bearingHolderBottom() {
             // M3 fix bearing
             translate([18.5,-4,h/2]) rotate([90,0,0]) cylinder(d=3.1,h=10, center=true);
             translate([-18.5,-4,h/2]) rotate([90,0,0]) cylinder(d=3.1,h=10, center=true);
-            translate([15.5,-6,(h-5.6)/2]) cube([9+0.02,3.2,5.6]); 
-            translate([-15.5-9,-6,(h-5.6)/2]) cube([9+0.02,3.2,5.6]); 
+            translate([15,-6,(h-5.6)/2]) cube([9+0.02,3.2,5.6]); 
+            translate([-15-9,-6,(h-5.6)/2]) cube([9+0.02,3.2,5.6]); 
             
             // M3 fix support
-            translate([27.1,-25,h/2]) rotate([90,0,0]) cylinder(d=3.1,h=20, center=true);
-            translate([27.1,-15,h/2]) rotate([90,0,0]) cylinder(d=9.1,h=20, center=true);
-            translate([-27.1,-25,h/2]) rotate([90,0,0]) cylinder(d=3.1,h=20, center=true);
-            translate([-27.1,-15,h/2]) rotate([90,0,0]) cylinder(d=9.1,h=20, center=true);
+            translate([27.5,-25,h/2]) rotate([90,0,0]) cylinder(d=3.1,h=20, center=true);
+            translate([27.5,-15,h/2]) rotate([90,0,0]) cylinder(d=10,h=20, center=true);
+            translate([-27.5,-25,h/2]) rotate([90,0,0]) cylinder(d=3.1,h=20, center=true);
+            translate([-27.5,-15,h/2]) rotate([90,0,0]) cylinder(d=10,h=20, center=true);
                         
             // reduce materials
             translate([0,-30,-3]) cylinder(d=30,h=15);
@@ -177,9 +177,11 @@ module bearingHolderBottom() {
     }
 }
 
+/** Support for motor to base
+ */
 module motorGearSupport() {
 
-    width=4;
+    width=6;
     motor_length=60;
     motor_diameter=40;
     motor_screw_diameter=3.5;
@@ -189,13 +191,24 @@ module motorGearSupport() {
     rotate([0,90,0]) {
         // motor axle fixing plate
         difference() {
-            hull() {
-                cylinder(d=motor_diameter+width,h=width);
-                translate([13,-50/2,0]) cube([10,50,width]);
+            union() {
+                // motor fix
+                hull() {
+                    cylinder(d=motor_diameter+width,h=width);
+                    translate([13,-50/2,0]) cube([10,50,width]);
+                }
+                // base 
+                hull() {
+                    translate([13,-50/2,0]) cube([10,50,width]);
+                    translate([13+5,-70/2,25]) cube([5,70,width]);
+                }
             }
             
             // shaft hole
             translate([-7.2,0,-0.5]) cylinder(d=14,h=width+1);
+            
+            // motor extrude
+            translate([0,0,width]) cylinder(d=motor_diameter,h=26);
             
             // fix holes
             for(rot=[1:6]) {
@@ -203,52 +216,31 @@ module motorGearSupport() {
                     translate([(37/2)-3,0,-0.5]) 
                         cylinder(h=width+1, d=motor_screw_diameter);
             }
+            
+            // M3 fix support
+            translate([20,25,18+width]) rotate([0,90,0]) cylinder(d=motor_screw_diameter,h=20, center=true);
+            translate([20,-25,18+width]) rotate([0,90,0]) cylinder(d=motor_screw_diameter,h=20, center=true);
+            translate([8,25,18+width]) rotate([0,90,0]) cylinder(d=10,h=20, center=true);
+            translate([8,-25,18+width]) rotate([0,90,0]) cylinder(d=10,h=20, center=true);
+            
+            translate([20,20,5+width]) rotate([0,90,0]) cylinder(d=motor_screw_diameter,h=20, center=true);
+            translate([20,-20,5+width]) rotate([0,90,0]) cylinder(d=motor_screw_diameter,h=20, center=true);
+            translate([5,20,5+width]) rotate([0,90,0]) cylinder(d=10,h=20, center=true);
+            translate([5,-20,5+width]) rotate([0,90,0]) cylinder(d=10,h=20, center=true);
         }
     }
-
-    /*color([0.2,0.7,0.2])
-    difference() {
-        // motor plates
-        union() {
-            translate([0,-(motor_diameter+base_length)/2,-(motor_diameter+width)/2]) cube([motor_length,motor_diameter+base_length,width]);
-            
-            for (b =[1,-1]) {
-                hull() {
-                    translate([width/2,b*(motor_diameter+width)/2,-8]) cube([width,width,25], center=true);
-                    translate([motor_length-width/2,b*(motor_diameter+width)/2,-15]) cube([width,width,10], center=true);
-                }
-            }
-        }
-        
-        // fix plate
-        for (a =[10,45]) {
-            for (b =[1,-1]) {
-                hull() {
-                    translate([a,b*(motor_diameter+base_length*2/3)/2,-(motor_diameter+width)/2]) cylinder(d=motor_screw_diameter,h=width+1);
-                    translate([a+5,b*(motor_diameter+base_length*2/3)/2,-(motor_diameter+width)/2]) cylinder(d=motor_screw_diameter,h=width+1);
-                }
-            }
-        }
-        
-        // extrude more
-        for (a =[10:10:55]) {
-            for (b =[1,-1]) {
-                translate([a,b*9,-(motor_diameter+width)/2]) cylinder(d=8,h=width+1);
-            }
-        }
-    }*/
 }
 
 module gearAssembly() {
-    color([141/256,97/256,66/256])
-        translate([30,-50,-40]) cube([100,100,10]);
-    color([0,1,0.3])
-        translate([10,-50,-86]) cube([100,100,10]);
+    color([0.4,0.4,0.4]) {
+        translate([-28,0,0]) rotate([0,90,0])  
+            cylinder(d=7,h=105);
+    }
 
     translate([-19,0,0]) rotate([0,90,0]) screwBoltsExt();
     rotate([0,90,0]) wheelGear();
     translate([34,0,0]) rotate([0,-90,0]) screwBoltsInt(); 
-    translate([64,0,0]) rotate([0,90,0]) screwBoltsShaft();
+    rotate([-120,0,0]) translate([64,0,0]) rotate([0,90,0]) screwBoltsShaft();
     rotate([90,0,0]) translate([165,-7,0]) rotate([0,-90,0]) motorGear30RPM();
     translate([96,0,-7]) motorGearSupport();
     translate([34,0,0]) rotate([0,90,0]) bearingAxle();
@@ -258,5 +250,8 @@ module gearAssembly() {
     }
 }
 
-bearingHolderBottom();
-//gearAssembly();
+color([141/256,97/256,66/256])
+    translate([30,-50,-40]) cube([100,100,10]);
+color([0,1,0.3])
+    translate([10,-50,-86]) cube([100,100,5]);
+gearAssembly();

@@ -1,42 +1,53 @@
 = 3D modeling
 
+Here are the parts used for prototyping.
+
+Some parts are just for modeling view, and some are printed.
+
+The approach is pragmatic: if easier and cheaper to buy, then buy! 
+For example, the wheel and base support are bought for very few money.
+
 == Full 3D view
 
-image:3d-parts/mower.png[Mower, link="3d-parts/mower.scad"]
+image:3d-parts/mower-assembly.png[Mower, link="3d-parts/mower-assembly.scad"]
 
 == 3D parts
 
 .Parts
 [width="80%",options="header"]
 |=========================================================
-| Item | Image
+| Item | Printed | Image
 
-| Motor cut adapter
-| image:3d-parts/motor-cut-adapter.png[Motor cut adapter, link="3d-parts/motor-cut-adapter.scad"]
+| link:3d-parts/mowing-system-motor-xd-3420.scad[Motor XD-3420]
+| No
+| image:3d-parts/mowing-system-motor-xd-3420.png[motor xd-3420, link="3d-parts/mowing-system-motor-xd-3420.scad"]
 
-| Motor cut support
-| image:3d-parts/motor-cut-support.png[Motor cut support, link="3d-parts/motor-cut-support.scad"]
+| link:3d-parts/gear-motor-30rpm.scad[Gear Motor 30RPM]
+| No
+| image:3d-parts/gear-motor-30rpm.png[Gear motor 30RPM, link="3d-parts/gear-motor-30rpm.scad"]
 
-| Motor cut disc
-| image:3d-parts/motor-cut-disc.png[Motor cut disc, link="3d-parts/motor-cut-disc.scad"]
-
-| Motor Gear 30RPM
-| image:3d-parts/motor-gear-30rpm.png[motor gear 30RPM, link="3d-parts/motor-gear-30rpm.scad"]
-
-| Motor Gear support
-| image:3d-parts/motor-gear-support.png[Motor gear support, link="3d-parts/motor-gear-support.scad"]
-
-| Motor Gear adapter
-| image:3d-parts/motor-gear-adapter.png[Motor gear adapter, link="3d-parts/motor-gear-adapter.scad"]
-
-| Motor XD-3420
-| image:3d-parts/motor-xd-3420.png[motor xd-3420, link="3d-parts/motor-xd-3420.scad"]
-
-| Wheel swiveling
+| link:3d-parts/wheel-360.scad[Wheel swiveling]
+| Partially (wheels is roller part)
 | image:3d-parts/wheel-360.png[wheel 360, link="3d-parts/wheel-360.scad"]
 
-| Wheel gear
-| image:3d-parts/wheel-gear.png[wheel gear, link="3d-parts/wheel-gear.scad"]
+| link:[Wheel gear]
+| No (from the local store)
+| image:3d-parts/gear-wheel.png[Gear wheel, link="3d-parts/gear-wheel.scad"]
+
+| link:3d-parts/mowing-system-disc-nylon.scad[Mowing System Disc]
+| No
+| image:3d-parts/mowing-system-disc-nylon.png[Mowing System Disc, link="3d-parts/mowing-system-disc-nylon.scad"]
+
+| link:3d-parts/gear-parts.scad[Gear parts]
+(bearing to support module, shaft coupling, motor support, wheel axle adaptor)
+| Yes (motor, axle and wheel appart)
+| image:3d-parts/gear-parts.png[Gear parts, link="3d-parts/gear-parts.scad"]
+
+| link:[Mowing System parts]
+(support, axle to disc adaptor)
+
+| Yes (Motor appart)
+| image:3d-parts/mowing-system-parts.png[Mowing System parts, link="3d-parts/motor-cut-adapter.scad"]
 
 |=========================================================
 

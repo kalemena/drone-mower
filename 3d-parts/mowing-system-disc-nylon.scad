@@ -21,7 +21,7 @@ module curved_triangle(r, pitch, separation, gap) {
   }
 }
 
-module motorCutDisc() {
+module mowingSystemDiscNylon() {
     color([138/256,144/256,150/256])
     difference() {
         union() {
@@ -42,4 +42,4 @@ module motorCutDisc() {
     } 
 }
 
-motorCutDisc();
+mowingSystemDiscNylon();
