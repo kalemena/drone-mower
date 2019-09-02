@@ -1,6 +1,32 @@
 $fn = 100;
 
-module wheel360() {
+module wheelBearing() {
+    // wheel
+    color([0.1,0.1,0.1])
+    hull() {
+        rotate_extrude(convexity = 10) translate([(63-18)/2, 0, 0]) circle(d = 18);
+        cylinder(d=12, h=18, center=true);
+    }
+}
+
+module bearing() {
+    // bearing 608zz
+    br = 11.15; // bearing radius with tolerance for insertion
+    bh = 7;     // bearing height
+    ir = 4.3;  // threaded rod radius + ample tolerance
+    t = 4; 
+    e = 0.02;
+    
+    color([0.3,0.3,0.3]) {
+        difference() {
+            translate([10,47,0]) rotate([90,0,0]) cylinder(r=br-e, h=bh+e+0.01);
+            translate([10,47,0]) rotate([90,0,0]) cylinder(r=ir-e, h=bh+e+0.01);
+        }
+        translate([10,100,0]) rotate([90,0,0]) cylinder(d=6, h=65);
+    }
+}
+
+module wheelSupport() {
 
     // bearing 608zz
     br = 11.15; // bearing radius with tolerance for insertion
@@ -14,13 +40,6 @@ module wheel360() {
     top_width=10;
     dist_axe=37;
     screw_diameter=3.2;
-
-    // wheel
-    color([0.1,0.1,0.1])
-    hull() {
-        rotate_extrude(convexity = 10) translate([(63-18)/2, 0, 0]) circle(d = 18);
-        cylinder(d=12, h=18, center=true);
-    }
 
     module side() {
         color([0.9,0.9,0.9])
@@ -65,6 +84,12 @@ module wheel360() {
                 }
         }
     }
+}
+
+module wheel360() {
+    wheelBearing();
+    wheelSupport();
+    bearing();
 }
 
 wheel360();

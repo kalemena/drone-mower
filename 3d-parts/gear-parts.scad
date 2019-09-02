@@ -166,10 +166,11 @@ module bearingHolderBottom() {
             translate([-15-9,-6,(h-5.6)/2]) cube([9+0.02,3.2,5.6]); 
             
             // M3 fix support
-            translate([27.5,-25,h/2]) rotate([90,0,0]) cylinder(d=3.1,h=20, center=true);
-            translate([27.5,-15,h/2]) rotate([90,0,0]) cylinder(d=10,h=20, center=true);
-            translate([-27.5,-25,h/2]) rotate([90,0,0]) cylinder(d=3.1,h=20, center=true);
-            translate([-27.5,-15,h/2]) rotate([90,0,0]) cylinder(d=10,h=20, center=true);
+            holeM3Dist=27.5;
+            translate([holeM3Dist,-30,h/2]) rotate([90,0,0]) cylinder(d=3.1,h=10+0.01, center=true);
+            translate([holeM3Dist,-20,h/2]) rotate([90,0,0]) cylinder(d=10,h=10, center=true);
+            translate([-holeM3Dist,-30,h/2]) rotate([90,0,0]) cylinder(d=3.1,h=10+0.01, center=true);
+            translate([-holeM3Dist,-20,h/2]) rotate([90,0,0]) cylinder(d=10,h=10, center=true);
                         
             // reduce materials
             translate([0,-30,-3]) cylinder(d=30,h=15);
@@ -241,7 +242,7 @@ module gearAssembly() {
     rotate([0,90,0]) wheelGear();
     translate([34,0,0]) rotate([0,-90,0]) screwBoltsInt(); 
     rotate([-120,0,0]) translate([64,0,0]) rotate([0,90,0]) screwBoltsShaft();
-    rotate([90,0,0]) translate([165,-7,0]) rotate([0,-90,0]) motorGear30RPM();
+    rotate([90,0,0]) translate([167,-7,0]) rotate([0,-90,0]) motorGear30RPM();
     translate([96,0,-7]) motorGearSupport();
     translate([34,0,0]) rotate([0,90,0]) bearingAxle();
     translate([45,0,0]) rotate([-90,180,90]) {
