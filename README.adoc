@@ -1,22 +1,23 @@
 = drone-mower
 
-Placeholder for mower stories.
+This repository gathers notes which can be used to build a simple robot on wheels.
 
-After looking at link:https://repalmakershop.com/pages/mower-build-information[Repal Mower] and after 1h mowing and pushing the mower outside, you'd only want to try another concept!
+Usage of the robot is for now focused on the possible usage as mower.
 
 But let's go step by step with stories.
+
+As usual, learning is the key. If things in this repository work, then great; and if not, well this is good learning.
+
+To build this Robot, we need:
+
+* link:bom.adoc[buying few parts]
+* link:3d-parts.adoc[printing other parts]
 
 = Stories
 
 * link:stories-sensors.adoc[Sensors Testing]
 
 * link:/stories/11-RC-mower-test[Radio controlled motors (gear and cut)]
-
-== 3d printing
-
-TODO: in progress...
-
-link:/3d-parts[3d Parts]
 
 = References
 
@@ -36,3 +37,5 @@ link:/3d-parts[3d Parts]
 * link:https://www.instructables.com/id/Build-Your-Own-Vacuum-Robot/[Vacuum cleaner #2]
 
 * link:https://www.veterobot.org/2015/06/building-robotics-ground-vehicle-part-1.html[Robotic vehicle]
+
+* link:https://www.impulseadventure.com/elec/robot-lidar-neato-xv11.html[LIDAR experiments]

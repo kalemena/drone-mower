@@ -4,7 +4,7 @@
 #define in1 4
 #define in2 5
 
-#define enB 10
+#define enB 8
 #define in3 6
 #define in4 7
 
