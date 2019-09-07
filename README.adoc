@@ -38,4 +38,7 @@ To build this Robot, we need:
 
 * link:https://www.veterobot.org/2015/06/building-robotics-ground-vehicle-part-1.html[Robotic vehicle]
 
-* link:https://www.impulseadventure.com/elec/robot-lidar-neato-xv11.html[LIDAR experiments]
+* Lidar
+
+** link:https://www.impulseadventure.com/elec/robot-lidar-neato-xv11.html[LIDAR experiments]
+** link:http://meetjanez.splet.arnes.si/2015/08/22/neato-xv-11-to-ros-slam/[LIDAR wiring]

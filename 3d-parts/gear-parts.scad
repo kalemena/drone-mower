@@ -34,18 +34,19 @@ module screwBoltsInt() {
     color([0.9,0.2,0.2])
     difference() {
         union() {
-            cylinder(d=15,h=8);
-            translate([0,0,8]) cylinder(d1=15, d2=26,h=6);
-            translate([0,0,8+6]) cylinder(d=26,h=3+3);                   
+            cylinder(d1=12,d2=18,h=3);
+            translate([0,0,3]) cylinder(d=18,h=7);
+            translate([0,0,3+7]) cylinder(d1=18, d2=26,h=6);
+            translate([0,0,3+7+6]) cylinder(d=26,h=3+3);                   
         }
-        translate([0,0,8+6+3]) cylinder(d=20,h=3+0.01);
+        translate([0,0,3+7+6+3]) cylinder(d=20,h=3+0.01);
         for(rot=[1:6]) {
             rotate([0,0,360 - rot * 360/6])
-                translate([12.5,0,6+12.5]) 
+                translate([12.5,0,2+6+12.5]) 
                     cube([6,2.3,3+0.01], center=true);
         }
         // M3 fix screw
-        translate([0,0,4.5]) rotate([0,90,0]) cylinder(d=2.3,h=40, center=true);
+        translate([0,0,2+4.5]) rotate([0,90,0]) cylinder(d=2.3,h=40, center=true);
         
         // Axle
         translate([0,0,-0.01]) cylinder(d=screwDiamInt,h=25+0.02);
@@ -77,21 +78,6 @@ module screwBoltsShaft() {
         
         translate([4.5,-5.6/2,30-9]) cube([3.2,5.6,9+0.02]); 
         translate([20,0,30-5]) rotate([0,90,0]) cylinder(d=3.1,h=40, center=true);
-    }
-}
-
-/** Small axle to bearing adapter
- */
-module bearingAxle() {
-    bearingH=7;
-    screwDiamInt=7.4;
-    color([0.9,0.2,0.2])
-    difference() {
-        union() {
-            cylinder(d1=15,d2=12,h=2);
-            translate([0,0,2]) cylinder(d=8,h=bearingH);
-        }
-        cylinder(d=screwDiamInt,h=10);
     }
 }
 
@@ -240,11 +226,10 @@ module gearAssembly() {
 
     translate([-19,0,0]) rotate([0,90,0]) screwBoltsExt();
     rotate([0,90,0]) wheelGear();
-    translate([34,0,0]) rotate([0,-90,0]) screwBoltsInt(); 
+    translate([36,0,0]) rotate([0,-90,0]) screwBoltsInt(); 
     rotate([-120,0,0]) translate([64,0,0]) rotate([0,90,0]) screwBoltsShaft();
     rotate([90,0,0]) translate([167,-7,0]) rotate([0,-90,0]) motorGear30RPM();
     translate([96,0,-7]) motorGearSupport();
-    translate([34,0,0]) rotate([0,90,0]) bearingAxle();
     translate([45,0,0]) rotate([-90,180,90]) {
         bearingHolderTop();
         bearingHolderBottom();
