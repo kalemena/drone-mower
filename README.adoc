@@ -42,3 +42,4 @@ To build this Robot, we need:
 
 ** link:https://www.impulseadventure.com/elec/robot-lidar-neato-xv11.html[LIDAR experiments]
 ** link:http://meetjanez.splet.arnes.si/2015/08/22/neato-xv-11-to-ros-slam/[LIDAR wiring]
+** link:https://blog.tkjelectronics.dk/2014/08/handheld-xv-11-lidar-with-stm32f429-and-matlab/[LIDAR Math]

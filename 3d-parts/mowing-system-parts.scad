@@ -57,6 +57,6 @@ module mowingSystemAssembly() {
 color([141/256,97/256,66/256])
 difference() {
     translate([0,0,-87]) cube([150,150,10], center=true);
-    translate([0,0,-87]) cylinder(d=30,h=50, center=true);
+    translate([0,0,-87]) cylinder(d=52,h=50, center=true);
 }
-mowingSystemAssembly();
+translate([0,0,-15]) mowingSystemAssembly();

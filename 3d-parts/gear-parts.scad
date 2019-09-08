@@ -29,7 +29,7 @@ module screwBoltsInt() {
     // screw diameter
     // 6.4 for 6mm, 8.5 for 8mm, 7.6 for 7mm
     screwDiamExt=8.5;
-    screwDiamInt=7.6;
+    screwDiamInt=7.8;
     
     color([0.9,0.2,0.2])
     difference() {
