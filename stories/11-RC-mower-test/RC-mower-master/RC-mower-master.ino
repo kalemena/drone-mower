@@ -38,24 +38,25 @@ void loop() {
   // - 8 for mower rotor speed
 
   int ctrlActivate = iBus.get_channel(7); // 1000 or 2000
-  if(ctrlActivate < 1500) {
+  // By default all controls are at low
+  if(ctrlActivate > 1500) {
     int ctrlSpeed = iBus.get_channel(2); // 1000 to 2000
     int ctrlDir = iBus.get_channel(0);   // 1000 to 2000, centered at 1500
     int ctrlRotorSpeed = iBus.get_channel(8);   // 1000 to 2000
     
-    int computedSpeed = (ctrlSpeed - 1500) / 2; // -250 to +250
-    int computedDir = (ctrlDir - 1500) / 2; // -250 to +250
+    int computedSpeed = map(ctrlSpeed, 1000, 2000, -255, 255);
+    int computedDir = map(ctrlDir, 1000, 2000, -250, 250);
     
     int computedSpeedLeft, computedSpeedRight;
   
     if(computedSpeed > 0) {
       // forward
-      computedSpeedLeft = computedSpeed + computedDir;
-      computedSpeedRight = computedSpeed - computedDir;
-    } else {
-      // backward
       computedSpeedLeft = computedSpeed - computedDir;
       computedSpeedRight = computedSpeed + computedDir;
+    } else {
+      // backward
+      computedSpeedLeft = computedSpeed + computedDir;
+      computedSpeedRight = computedSpeed - computedDir;
     }
       
     Serial.print("Speed = ");
@@ -70,6 +71,6 @@ void loop() {
   
     sendRotorsAction(map(ctrlRotorSpeed, 1000, 2000, 0, 255), computedSpeedLeft, computedSpeedRight);
   } else {
-    sendRotorsAction(1, 0, 0);
+    sendRotorsAction(0, 0, 0);
   } 
 }

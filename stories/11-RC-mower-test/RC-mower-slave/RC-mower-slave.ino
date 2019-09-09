@@ -96,18 +96,22 @@ void setupMotorGear(MotorGear motor) {
   pinMode(motor.pinDir2, OUTPUT);
 }
 
-// Speed = -500 => +500
+// Speed = -255 => +255
 void setMotorGear(MotorGear motor, int speed) {
-  if(speed > 0) {
+  if(speed > 40) {
     // CCW
     digitalWrite(motor.pinDir1, HIGH);
     digitalWrite(motor.pinDir2, LOW);
     analogWrite(motor.pinPWM, min(speed,255) );
-  } else {
+  } else if(speed < -40) {
     // CW
     digitalWrite(motor.pinDir1, LOW);
     digitalWrite(motor.pinDir2, HIGH);
     analogWrite(motor.pinPWM, min(-speed,255) );
+  } else {
+    digitalWrite(motor.pinDir1, LOW);
+    digitalWrite(motor.pinDir2, HIGH);
+    analogWrite(motor.pinPWM, 1 );
   }
 }
 // ----------------------
@@ -118,9 +122,9 @@ void receiveEvent(int bytes) {
   Wire.readBytes((byte*)&packet, bytes);
   
   // Motor Cut
-  if(packet.cutSpeed > 0)
+  if(packet.cutSpeed > 5)
     setMotorCut('R', packet.cutSpeed);
-  else if(packet.cutSpeed < 0)
+  else if(packet.cutSpeed < 5)
     setMotorCut('L', abs(packet.cutSpeed));
   else
     closeMotorCut('L');
