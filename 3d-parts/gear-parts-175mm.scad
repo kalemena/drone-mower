@@ -1,6 +1,6 @@
 $fn=100;
 
-use<gear-wheel.scad>
+use<gear-wheel-175mm.scad>
 use<gear-motor-30rpm.scad>
 
 /** Wheel External side axle
