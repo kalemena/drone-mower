@@ -1,6 +1,6 @@
 $fn=100;
 
-use<gear-wheel.scad>
+use<gear-wheel-200mm.scad>
 use<gear-motor-30rpm.scad>
 
 /** Wheel External side axle
@@ -226,8 +226,8 @@ module gearAssembly() {
             cylinder(d=7,h=105);
     }
 
-    translate([-19,0,0]) rotate([0,90,0]) screwBoltsExt();
-    rotate([0,90,0]) wheelGear();
+    translate([-25,0,0]) rotate([0,90,0]) screwBoltsExt();
+    translate([-3,0,0]) rotate([0,90,0]) wheelGear();
     translate([36,0,0]) rotate([0,-90,0]) screwBoltsInt(); 
     rotate([-120,0,0]) translate([64,0,0]) rotate([0,90,0]) screwBoltsShaft();
     rotate([90,0,0]) translate([167,-7,0]) rotate([0,-90,0]) motorGear30RPM();
@@ -238,12 +238,8 @@ module gearAssembly() {
     }
 }
 
-/*
 color([141/256,97/256,66/256])
     translate([30,-50,-40]) cube([100,100,10]);
 color([0,1,0.3])
-    translate([10,-50,-86]) cube([100,100,5]);
+    translate([10,-50,-100]) cube([100,100,5]);
 gearAssembly();
-*/
-
-screwBoltsInt();
