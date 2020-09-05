@@ -36,14 +36,17 @@ module screwBoltsInt() {
             cylinder(d1=12,d2=18,h=3);
             translate([0,0,3]) cylinder(d=18,h=7);
             translate([0,0,3+7]) cylinder(d1=18, d2=26,h=6);
-            translate([0,0,3+7+6]) cylinder(d=26,h=3+3);                   
+            translate([0,0,3+7+6]) cylinder(d=26,h=9+3+3);                   
         }
-        translate([0,0,3+7+6+3]) cylinder(d=20,h=3+0.01);
+        
+        translate([0,0,3+7+6+3]) cylinder(d=20+0.2,h=10+3+0.01);
+        
         for(rot=[1:6]) {
             rotate([0,0,360 - rot * 360/6])
-                translate([12.5,0,2+6+12.5]) 
+                translate([12.5,0,9+2+6+12.5]) 
                     cube([6,2.3,3+0.01], center=true);
         }
+        
         // M3 fix screw
         translate([0,0,2+4.5]) rotate([0,90,0]) cylinder(d=2.3,h=40, center=true);
         
