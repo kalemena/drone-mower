@@ -45,3 +45,4 @@ To build this Robot, we need:
 ** link:https://blog.tkjelectronics.dk/2014/08/handheld-xv-11-lidar-with-stm32f429-and-matlab/[LIDAR Math]
 ** link:https://www.youtube.com/watch?v=6R3rVeY3Sgc[Wiring and details]
 ** link:http://www.tobias-weis.de/neato-xv-laser-scanner-lidar/[LIDAR RPi test]
+** link:https://www.instructables.com/id/An-Autonomous-Rover[Robot]
