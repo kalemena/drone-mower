@@ -13,20 +13,21 @@ To build this Robot, we need:
 * link:bom.adoc[buying few parts]
 * link:3d-parts.adoc[printing other parts]
 
-= Stories
+== Stories
 
 * link:stories-sensors.adoc[Sensors Testing]
 
 * link:/stories/11-RC-mower-test[Radio controlled motors (gear and cut)]
 
-= References
+== References
 
 * link:https://repalmakershop.com/pages/mower-build-information[Repal Mower]
-
+* link:https://www.youtube.com/watch?v=ZhTGQARRAqk[Tondeuse solaire]
 * link:https://www.ardumower.de/index.php/en/forum/your-projects/1565-valify-my-robot-lawnmower-project[Valify Mower]
-
 * link:https://www.slideshare.net/RITESHPATIL52/solar-based-grass-cutter-machine[Solar grass cutter]
 * link:https://nevonprojects.com/fully-automated-solar-grass-cutter/[Solar grass cutter]
+
+* link:https://www.instructables.com/SCREW-DRIVE-RC-TANK[Screw drive tank]
 
 * link:https://www.open-electronics.org/a-robotic-lawn-mowers-powered-by-solar-energy-with-an-arduino-heart[Open Electronic model]
 
