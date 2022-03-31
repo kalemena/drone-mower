@@ -21,6 +21,14 @@ To build this Robot, we need:
 
 == References
 
+* Existing mowers
+** link:https://wiki.ardumower.de/index.php?title=Ardumower_Sunray[Ardumower]. 
+This project has many details, including GPS-RTK capabilities. 
+Downside is that this looks very bundled, hence complex monolith while this would be preferable to be based on interchangeable modules.
+
+
+
+
 * link:https://repalmakershop.com/pages/mower-build-information[Repal Mower]
 * link:https://www.youtube.com/watch?v=ZhTGQARRAqk[Tondeuse solaire]
 * link:https://www.ardumower.de/index.php/en/forum/your-projects/1565-valify-my-robot-lawnmower-project[Valify Mower]
