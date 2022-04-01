@@ -23,11 +23,15 @@ To build this Robot, we need:
 
 == References
 
-* Existing mowers
+* Existing mower projects (not entirely opensource)
 ** link:https://wiki.ardumower.de/index.php?title=Ardumower_Sunray[Ardumower]. 
 This project has many details, including GPS-RTK capabilities. 
 Downside is that this looks very bundled, hence complex monolith while this would be preferable to be based on interchangeable modules.
 
+** link:https://repalmakershop.com/pages/mower-build-information[Repal Mower]
+No compromise full 3D-printed mower.
+Too ambitious to print everything.
+Costly, yet not very modular.
 
 
 
