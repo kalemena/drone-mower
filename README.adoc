@@ -1,4 +1,5 @@
 = drone-mower
+:hardbreaks:
 
 This repository gathers notes which can be used to build a simple robot on wheels.
 
@@ -10,8 +11,9 @@ As usual, learning is the key. If things in this repository work, then great; an
 
 To build this Robot, we need:
 
-* link:bom.adoc[buying few parts]
-* link:3d-parts.adoc[printing other parts]
+* link:bom.adoc[BOM - buying few parts]
+* link:3d-parts.adoc[Printing other parts]
+* Coding the rest
 
 == Stories
 
