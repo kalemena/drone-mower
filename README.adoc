@@ -33,11 +33,12 @@ No compromise full 3D-printed mower.
 Too ambitious to print everything.
 Costly, yet not very modular.
 
+** link:https://www.youtube.com/watch?v=ZhTGQARRAqk[Tondeuse solaire]
+Interesting modular concept.
+Not documented, but gives good hints on hardware links.
 
 
-* link:https://repalmakershop.com/pages/mower-build-information[Repal Mower]
-* link:https://www.youtube.com/watch?v=ZhTGQARRAqk[Tondeuse solaire]
-* link:https://www.ardumower.de/index.php/en/forum/your-projects/1565-valify-my-robot-lawnmower-project[Valify Mower]
+
 * link:https://www.slideshare.net/RITESHPATIL52/solar-based-grass-cutter-machine[Solar grass cutter]
 * link:https://nevonprojects.com/fully-automated-solar-grass-cutter/[Solar grass cutter]
 
