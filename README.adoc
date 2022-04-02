@@ -37,10 +37,15 @@ Costly, yet not very modular.
 Interesting modular concept.
 Not documented, but gives good hints on hardware links.
 
+** link:https://www.slideshare.net/RITESHPATIL52/solar-based-grass-cutter-machine[Solar grass cutter] and link:https://nevonprojects.com/fully-automated-solar-grass-cutter/[Solar grass cutter (Kit)]
+PDF explaining many aspects of building simple basic mower.
+Kit DIY.
 
 
-* link:https://www.slideshare.net/RITESHPATIL52/solar-based-grass-cutter-machine[Solar grass cutter]
-* link:https://nevonprojects.com/fully-automated-solar-grass-cutter/[Solar grass cutter]
+
+
+
+
 
 * link:https://www.instructables.com/SCREW-DRIVE-RC-TANK[Screw drive tank]
 
