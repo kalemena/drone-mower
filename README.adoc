@@ -42,12 +42,12 @@ PDF explaining many aspects of building simple basic mower.
 Kit DIY.
 
 
+* Locomotion specifics:
+** link:https://www.instructables.com/SCREW-DRIVE-RC-TANK[Screw drive RC tank] is moving surprisingly nice.
 
 
 
 
-
-* link:https://www.instructables.com/SCREW-DRIVE-RC-TANK[Screw drive tank]
 
 * link:https://www.open-electronics.org/a-robotic-lawn-mowers-powered-by-solar-energy-with-an-arduino-heart[Open Electronic model]
 
