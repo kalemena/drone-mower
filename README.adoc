@@ -41,6 +41,9 @@ Not documented, but gives good hints on hardware links.
 PDF explaining many aspects of building simple basic mower.
 Kit DIY.
 
+** link:https://www.open-electronics.org/a-robotic-lawn-mowers-powered-by-solar-energy-with-an-arduino-heart[Open Electronic model] has a store with minimal electronic board for a solar mower.
+This design is the kind I'm looking for, modular enough.
+
 
 * Locomotion specifics:
 ** link:https://www.instructables.com/SCREW-DRIVE-RC-TANK[Screw drive RC tank] is moving surprisingly nice.
