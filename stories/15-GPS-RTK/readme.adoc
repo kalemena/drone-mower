@@ -1,3 +1,12 @@
 = GPS-RTK
 
 GPS-RTK is the technology that enhance the GPS with centimeter accuracy.
+
+
+== References
+
+.Centipede RTK
+* link:https://docs.centipede.fr/[French shared NTRIP service]
+** link:https://www.youtube.com/watch?v=dcWotLV3rF8[Teria RTK - explaination]
+** link:https://hal.archives-ouvertes.fr/hal-03470820/document[Paper on usage in Coastal Morphodynamics Monitoring in Brittany]
+
