@@ -52,7 +52,7 @@ This design is the kind I'm looking for, modular enough.
 
 
 
-* link:https://www.open-electronics.org/a-robotic-lawn-mowers-powered-by-solar-energy-with-an-arduino-heart[Open Electronic model]
+
 
 * link:https://www.thingiverse.com/thing:2528123[Vacuum cleaner #1]
 
