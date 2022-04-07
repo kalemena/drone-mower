@@ -2,6 +2,25 @@
 
 GPS-RTK is the technology that enhance the GPS with centimeter accuracy.
 
+== Discovery
+
+SimpleRTK2B kit from link:https://www.ardusimple.com/[ArduSimple] is used in following tests.
+
+=== Stage 1
+
+Accuracy can be tested hooking up smartphone using following docs:
+
+* link:https://www.ardusimple.com/how-to-use-ardusimple-products-with-android-smartphones-tablets/[Connect SimpleRTK2B to Android smartphone with USB]
+* link:https://docs.centipede.fr/docs/centipede/3_connect_caster.html[Connect Caster on French Centipede] and select a caster close to your location using the map.
+
+With a caster at about 10km, the result is surprising when looking at the map on Android app *SW Maps*.
+With no doubt, location is precise at centimeter accuracy.
+Standard GPS is of by 2-10 meters on the *SW Maps* application, while GPS-RTK gives somewhere under 30cm, right away.
+
+There are few aspects to solve:
+
+* Requires good internet access (WiFi or 4G)
+* With Android app, this remains difficult to assess where we are in accuracy between 1 and 30cm
 
 == References
 
