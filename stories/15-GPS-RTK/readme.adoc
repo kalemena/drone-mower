@@ -10,3 +10,10 @@ GPS-RTK is the technology that enhance the GPS with centimeter accuracy.
 ** link:https://www.youtube.com/watch?v=dcWotLV3rF8[Teria RTK - explaination]
 ** link:https://hal.archives-ouvertes.fr/hal-03470820/document[Paper on usage in Coastal Morphodynamics Monitoring in Brittany]
 
+.Hardware:
+* link:https://www.elektor.fr/catalogsearch/result/?q=GPS-RTK[Sparkfun GPS-RTK] (link:https://learn.sparkfun.com/tutorials/gps-rtk-hookup-guide[tutorial])
+* link:https://www.ardusimple.com/[ArduSimple]
+** link:https://www.youtube.com/watch?v=VTCWRhXsgjo[simpleRTK2B to smartphone using BLE]
+** link:https://www.ardusimple.com/how-to-use-ardusimple-products-with-android-smartphones-tablets/[SimpleRTK2B to Android smartphone with USB]
+
+
