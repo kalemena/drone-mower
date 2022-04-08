@@ -11,7 +11,7 @@ SimpleRTK2B kit from link:https://www.ardusimple.com/[ArduSimple] is used in fol
 Accuracy can be tested hooking up smartphone using following docs:
 
 * link:https://www.ardusimple.com/how-to-use-ardusimple-products-with-android-smartphones-tablets/[Connect SimpleRTK2B to Android smartphone with USB]
-* link:https://docs.centipede.fr/docs/centipede/3_connect_caster.html[Connect Caster on French Centipede] and select a caster close to your location using the map.
+* Connect NTRIP Caster on link:https://docs.centipede.fr/docs/centipede/3_connect_caster.html[Centipede (France)] or link:http://rtk2go.com[RTK2GO (world)] and select a caster close to your location using the map.
 
 With a caster at about 10km, the result is surprising when looking at the map on Android app *SW Maps*.
 With no doubt, location is precise at centimeter accuracy.
