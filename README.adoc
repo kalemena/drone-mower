@@ -24,6 +24,10 @@ To build this Robot, we need:
 == References
 
 * Existing mower projects (not entirely opensource)
+
+** link:https://x-tech.online/2022/01/openmower/[Open Mower] && link:https://github.com/ClemensElflein/OpenMower[OpenMower Git project]
+Concept focused on GPS-RTK.
+
 ** link:https://wiki.ardumower.de/index.php?title=Ardumower_Sunray[Ardumower]. 
 This project has many details, including GPS-RTK capabilities. 
 Downside is that this looks very bundled, hence complex monolith while this would be preferable to be based on interchangeable modules.
