@@ -51,6 +51,8 @@ This design is the kind I'm looking for, modular enough.
 ** link:https://www.youtube.com/watch?v=KN7Gcw-nIkk[Arduino mower prototype]
 Nice simple concept. But a video remains a video without much re-usability for others.
 
+** link:https://www.instructables.com/Lawnmower-Robot/[Lawnmower-Robot]
+Yet another Arduino mower. This time many details.
 
 * Locomotion specifics:
 ** link:https://www.instructables.com/SCREW-DRIVE-RC-TANK[Screw drive RC tank] is moving surprisingly nice.
