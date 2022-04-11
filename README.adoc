@@ -58,19 +58,9 @@ Yet another Arduino mower. This time many details.
 ** link:https://www.instructables.com/SCREW-DRIVE-RC-TANK[Screw drive RC tank] is moving surprisingly nice.
 ** link:https://www.veterobot.org/2015/06/building-robotics-ground-vehicle-part-1.html[Robotic vehicle motorisation explained]
 
+* Vacuum Cleaner (have a lot in common with mowers)
+** link:https://www.instructables.com/id/Build-Your-Own-Vacuum-Robot/[Vacuum cleaner - Instructable]
 
-
-
-
-
-
-* link:https://www.thingiverse.com/thing:2528123[Vacuum cleaner #1]
-
-* link:https://www.thingiverse.com/thing:3249950[Vacuum cleaner #2]
-
-* link:https://www.instructables.com/id/Build-Your-Own-Vacuum-Robot/[Vacuum cleaner #2]
-
-* link:https://www.veterobot.org/2015/06/building-robotics-ground-vehicle-part-1.html[Robotic vehicle]
 
 * Lidar
 
