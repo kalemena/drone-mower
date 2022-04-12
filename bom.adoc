@@ -28,25 +28,20 @@ Here are items to buy (or build):
 | xd-3420 12v
 | Motor holding the trimmer
 
-| Cut
+| Cutting
 | Trimmer disc
-| link:https://www.banggood.com/110x15mm-Aluminum-Grass-Trimmer-Head-with-4-Nylon-Lines-for-Brush-Cutter-Strimmer-Replacement-p-1202694.html?rmmds=detail-left-hotproducts__2&cur_warehouse=CN[Trimmer disc]
-|
+| 
+| Trimmer disc
 
-| Cut
+| Cutting
 | Trimmer wire
-| link:https://www.banggood.com/2_7mm-1550120m-Roll-Nylon-Trimmer-Line-Mower-Grass-Rope-Brushcutter-Cord-Wire-p-1390060.html?rmmds=detail-left-hotproducts__2&ID=41677&cur_warehouse=CN[Trimmer wire]
-|
-
-| Drive
-| Wheel Gear 
 | 
-link:https://www.leroymerlin.fr/v3/p/produits/roue-fixe-sur-axe-diam-175-mm-e21495[Wheel 175mm]
+| Trimmer wire
 
-link:https://www.leroymerlin.fr/v3/p/produits/roue-fixe-sur-axe-diam-180-mm-e21499[Wheel 180mm]
+| Driving
+| Wheel Gear x 2
 | 
-To print or not to print ? 
-For 4€, this seems better to buy.
+| Wheel 180mm to move the robot
 
 |=========================================================
 
