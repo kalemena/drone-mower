@@ -8,15 +8,25 @@ Here are items to buy (or build):
 |=========================================================
 | Category |Item | Links | Comments
 
-| Control
+| Controling
 | Main board
 | ESP32
 | Control and communicate
 
-| Cut
+| Sensors
+| Ultrasonic Sensor
+| HC-SR04 
+| Sense distance
+
+| Cutting
+| Motor
+| Motor Driver BTS7960 43A
+| Interfaces the main board and the xd-3420 12v motor
+
+| Cutting
 | Trimmer motor 12v
-| link:https://www.banggood.com/XD-3420-DC-1224V-30W-Permanent-Magnet-DC-Motor-CWCCW-Motor-p-1223406.html?rmmds=search&ID=518349&cur_warehouse=CN[xd-3420 12v]
-|
+| xd-3420 12v
+| Motor holding the trimmer
 
 | Cut
 | Trimmer disc
