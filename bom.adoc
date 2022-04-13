@@ -16,7 +16,23 @@ Here are items to buy (or build):
 | Sensors
 | Ultrasonic Sensor
 | HC-SR04 
-| Sense distance
+| Sense distance to avoid obstacle
+
+| Sensors
+| Rain Drop Sensor
+|
+| Sense rain to trigger "return home" scenario
+
+| Sensors
+| RTC Clock
+| RTC DS1307
+| Used to keep accurate time while mowing
+
+| Sensors
+| Current Sensor
+| ACS712ELC
+| Sense high current on trimmer motor. Used to stop everything.
+
 
 | Cutting
 | Motor
