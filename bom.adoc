@@ -33,6 +33,10 @@ Here are items to buy (or build):
 | ACS712ELC
 | Sense high current on trimmer motor. Used to stop everything.
 
+| Actuators
+| 5v relays
+|
+| On/Off the other components: wheel or cutting motor
 
 | Cutting
 | Motor
@@ -53,6 +57,11 @@ Here are items to buy (or build):
 | Trimmer wire
 | 
 | Trimmer wire
+
+| Driving
+| Motor driver x 2
+| L298N
+| Interfaces the main board with the moving motors
 
 | Driving
 | Wheel Gear x 2
