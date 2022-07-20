@@ -13,13 +13,7 @@ To build this Robot, we need:
 
 * link:bom.adoc[BOM - buying few parts]
 * link:3d-parts.adoc[Printing other parts]
-* Coding the rest
-
-== Stories
-
-* link:stories-sensors.adoc[Sensors Testing]
-
-* link:/stories/11-RC-mower-test[Radio controlled motors (gear and cut)]
+* link:/stories/readme.adoc[Stories detailing each parts of building]
 
 == References
 
@@ -60,7 +54,6 @@ Yet another Arduino mower. This time many details.
 
 * Vacuum Cleaner (have a lot in common with mowers)
 ** link:https://www.instructables.com/id/Build-Your-Own-Vacuum-Robot/[Vacuum cleaner - Instructable]
-
 
 * Lidar (end up not interesting for mower, but cool)
 ** link:https://www.youtube.com/watch?v=6R3rVeY3Sgc[Wiring and details]
