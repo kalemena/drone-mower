@@ -24,6 +24,9 @@ There are few aspects to solve:
 
 == References
 
+.Papers
+* link:https://rtklibexplorer.wordpress.com[RTKLib explorer]
+
 .Centipede RTK
 * link:https://docs.centipede.fr/[French shared NTRIP service]
 ** link:https://www.youtube.com/watch?v=dcWotLV3rF8[Teria RTK - explaination]
@@ -35,7 +38,7 @@ There are few aspects to solve:
 ** link:https://www.youtube.com/watch?v=VTCWRhXsgjo[simpleRTK2B to smartphone using BLE]
 ** link:https://www.ardusimple.com/how-to-use-ardusimple-products-with-android-smartphones-tablets/[SimpleRTK2B to Android smartphone with USB]
 
-.Frecnh Farmers explained
+.French Farmers explained
 * link:https://www.youtube.com/watch?v=utcBdppXC4c[Agri - explication]
 * link:https://www.youtube.com/watch?v=-VMFGYpUTiI[GPS-RTK rover by farmer]
 * link:https://www.youtube.com/watch?v=hkxunjCAMVs[GPS-RTK base by farmer]
