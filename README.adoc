@@ -17,6 +17,10 @@ To build this Robot, we need:
 
 == References
 
+* Documents
+
+** link:https://www.dfrobot.com/blog-13511.html[DF-Robot blog explains RTK GPS]
+
 * Existing mower projects (not entirely opensource)
 
 ** link:https://x-tech.online/2022/01/openmower/[Open Mower] && link:https://github.com/ClemensElflein/OpenMower[OpenMower Git project]
@@ -59,3 +63,4 @@ Yet another Arduino mower. This time many details.
 ** link:https://www.youtube.com/watch?v=6R3rVeY3Sgc[Wiring and details]
 ** link:http://www.tobias-weis.de/neato-xv-laser-scanner-lidar/[LIDAR RPi test]
 ** link:https://www.instructables.com/id/An-Autonomous-Rover[An autonomous Rover]
+
